@@ -420,7 +420,7 @@ client.on("guildMemberAdd", async member => {
       );
       if (!c) return;
       c.sendFile(canvas.toBuffer());
-      c.send(`**__W__elcome ~~T~~o** **${member.guild.name}**`)
+      c.send(`**Welcome To** **${member.guild.name}**`)
       c.send("**  User : **" + `${member}` + "..");
       fs.writeFile(
         "./welcomer.json",
